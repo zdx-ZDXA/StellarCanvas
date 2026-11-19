@@ -1,0 +1,34 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "启用生图",
+    "default": true
+  },
+  "backend": {
+    "type": "string",
+    "description": "生图后端",
+    "default": "nai",
+    "options": [
+      "nai",
+      "openai"
+    ],
+    "hint": "nai=NovelAI，openai=OpenAI 兼容接口"
+  },
+  "api_key": {
+    "type": "string",
+    "description": "API 密钥",
+    "default": ""
+  },
+  "api_base": {
+    "type": "string",
+    "description": "API 地址",
+    "default": "",
+    "hint": "留空用后端默认地址；用中转站时填这里"
+  },
+  "daily_limit": {
+    "type": "int",
+    "description": "每日上限",
+    "default": 0,
+    "hint": "每人每天最多几张，0 表示不限"
+  }
+}
